@@ -7,3 +7,4 @@ jobs:
     steps:
       - run: apt list --all-versions docker*
       - run: apt list --installed docker*
+      - run: which docker
