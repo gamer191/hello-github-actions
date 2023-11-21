@@ -3,7 +3,7 @@ on: push
 jobs:
   build:
     name: Hello world action
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - run: apt list --all-versions docker*
       - run: apt list --installed docker*
