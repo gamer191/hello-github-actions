@@ -3,9 +3,6 @@ on: push
 jobs:
   build:
     name: Hello world action
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
     steps:
-      - run: apt list --all-versions docker*
-      - run: apt list --installed docker*
-      - run: which docker
       - run: echo %PATHEXT%
